@@ -20,15 +20,15 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
 
   def list(page: Int ) = Action { implicit request =>
     val limit: Int = 10
-    val offset: Int = page* limit
+    val offset: Int = page * limit
     val listOfItems: List[Int] = (1 to 1000).toList
     val resultsPerPage = listOfItems.slice(offset, offset + limit)
-      // достать число из листа
 
 
 
 
-    Ok("NUMBERS IS " + resultsPerPage)
+
+    Ok("NUMBERS IS " + resultsPerPage.mkString(", "))
   }
 
     def showPage(firstNumber: Int, secondNumber: Option[Int], thirdNumber: Option[Int]) = Action {
