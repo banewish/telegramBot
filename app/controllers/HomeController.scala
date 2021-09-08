@@ -23,7 +23,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     val offset: Int = page* limit
     val listOfItems: List[Int] = (1 to 1000).toList
     val resultsPerPage = listOfItems.slice(offset, offset + limit)
-      // достать инт из листа
+      // достать числа из листа
 
 
 
