@@ -18,17 +18,32 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(views.html.index1())
   }
 
-  def list(page: Int ) = Action { implicit request =>
+
+
+
+  def list(page: Int) = Action { implicit request =>
     val limit: Int = 10
     val offset: Int = page * limit
     val listOfItems: List[Int] = (1 to 1000).toList
     val resultsPerPage = listOfItems.slice(offset, offset + limit)
 
+    Ok("NUMBERS ARE " + resultsPerPage.mkString("item: num " , ", item:num " ,  "" ))
+  }
 
+  def listWithD2(page: Int) = Action { implicit request =>
+    val limit: Int = 10
+    val offset: Int = page * limit
+    val listOfItems: List[Int] = (1 to 1000).toList
+    val resultsPerPage = listOfItems.slice(offset, offset + limit)
 
+    Ok("(D2) NUMBERS ARE " + resultsPerPage.filter(_ % 2== 0).mkString("item: num " , ", item:num " ,  "" ))
+  }
 
+  def listWithD3(page: String) = Action { implicit request =>
 
-    Ok("NUMBERS IS " + resultsPerPage.mkString(", "))
+    val result = page.toList.filterNot(Set(','))
+
+    Ok("(D3) NUMBERS ARE " + result.filter(_ % 2== 0).mkString("item: num " , ", item:num " ,  "" ))
   }
 
     def showPage(firstNumber: Int, secondNumber: Option[Int], thirdNumber: Option[Int]) = Action {

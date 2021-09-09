@@ -5,6 +5,8 @@
 
 # An example controller showing a sample home page
 GET     /                             controllers.HomeController.list(page: Int)
+GET     /d2                          controllers.HomeController.listWithD2(page: Int)
+GET     /d3                          controllers.HomeController.listWithD3(items: String)
 
 
 
