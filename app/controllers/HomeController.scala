@@ -36,14 +36,15 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents) e
     val listOfItems: List[Int] = (1 to 1000).toList
     val resultsPerPage = listOfItems.slice(offset, offset + limit)
 
+
     Ok("(D2) NUMBERS ARE " + resultsPerPage.filter(_ % 2== 0).mkString("item: num " , ", item:num " ,  "" ))
   }
 
-  def listWithD3(page: String) = Action { implicit request =>
+  def listWithD3(numbers: String) = Action { implicit request =>
 
-    val result = page.toList.filterNot(Set(','))
+    val result = numbers.split(",").toList
 
-    Ok("(D3) NUMBERS ARE " + result.filter(_ % 2== 0).mkString("item: num " , ", item:num " ,  "" ))
+    Ok("(D3) NUMBERS ARE " + result.mkString(", item:num "))
   }
 
     def showPage(firstNumber: Int, secondNumber: Option[Int], thirdNumber: Option[Int]) = Action {
