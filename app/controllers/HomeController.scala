@@ -1,69 +1,70 @@
 package controllers
 
-import models._
+import models.{PasswordHash, PasswordRepository}
 
+import java.lang.ProcessBuilder.Redirect
 import javax.inject._
-import play.api._
 import play.api.mvc._
-import play.api.data.Form
-import play.api.data.Forms._
-import play.api.http.Writeable
+import play.api._
+import play.api.libs.json.Json
+import scala.concurrent._
+import ExecutionContext.Implicits.global
 
-@Singleton
-class HomeController @Inject()(val controllerComponents: ControllerComponents) extends BaseController with play.api.i18n.I18nSupport {
+class HomeController @Inject()(repo: PasswordRepository, cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
+
+  import UserDataForm._
+
+
 
   def index() = Action { implicit request: Request[AnyContent] =>
-
-
-    Ok(views.html.index1())
+    Ok(views.html.index())
   }
 
-
-
-
-  def list(page: Int) = Action { implicit request =>
-    val limit: Int = 10
-    val offset: Int = page * limit
-    val listOfItems: List[Int] = (1 to 1000).toList
-    val resultsPerPage = listOfItems.slice(offset, offset + limit)
-
-    Ok("NUMBERS ARE " + resultsPerPage.mkString("item: num " , ", item:num " ,  "" ))
+  def validate() = Action { implicit request: MessagesRequest[AnyContent] =>
+    Ok(views.html.registration(userFormConstraints))
   }
 
-  def listWithD2(page: Int) = Action { implicit request =>
-    val limit: Int = 10
-    val offset: Int = page * limit
-    val listOfItems: List[Int] = (1 to 1000).toList
-    val resultsPerPage = listOfItems.slice(offset, offset + limit)
-
-
-    Ok("(D2) NUMBERS ARE " + resultsPerPage.filter(_ % 2== 0).mkString("item: num " , ", item:num " ,  "" ))
-  }
-
-  def listWithD3(numbers: String) = Action { implicit request =>
-
-    val result = numbers.split(",").toList
-
-    Ok("(D3) NUMBERS ARE " + result.mkString(", item:num "))
-  }
-
-    def showPage(firstNumber: Int, secondNumber: Option[Int], thirdNumber: Option[Int]) = Action {
-
-
-      // складывание параметров запроса и выведение на страницу суммы чисел из параметров
-      val res: Int = secondNumber.flatMap { second =>
-        thirdNumber
-          .map(third => firstNumber + second + third)
-          .orElse(Some(firstNumber + second))
-      }.getOrElse {
-        thirdNumber.fold(firstNumber)(third => firstNumber + third)
+  def formPost() = Action.async { implicit request =>
+    userFormConstraints.bindFromRequest.fold(
+      formWithErrors => {
+        Future.successful(Ok(views.html.registration(formWithErrors)))
+      },
+      formData => {
+        repo.create(passwordHash(s = formData.toString)).map { _ =>
+          Redirect(routes.HomeController.index)
+//                  repo.create(formData.password).map { _ =>   //without hash
+//                  Redirect(routes.HomeController.index)
+        }
       }
+    )
+  }
 
-      Ok("number is :" + res)
+
+  def getPassword = Action.async { implicit request =>
+    repo.list().map { passwords =>
+      Ok(Json.toJson(passwords.toString()))
     }
+  }
+
+  def deletePassword = Action.async { implicit request =>
+    repo.delete().map { passwords =>
+      Ok(Json.toJson(passwords.toString()))
+    }
+  }
+// method pass hash
+  def passwordHash(s: String): String = {
+    import java.security.MessageDigest
+    import java.math.BigInteger
+    val md = MessageDigest.getInstance("MD5")
+    val digest = md.digest(s.getBytes)
+    val bigInt = new BigInteger(1,digest)
+    val hashedString = bigInt.toString(16)
+    hashedString
+  }
+
 }
 
-
-
+// получить, хешировать, отправить на сервис и проверить наличие в базе
+// если есть - ошибка, если нет - добавить в базу
 
 

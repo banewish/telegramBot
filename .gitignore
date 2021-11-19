@@ -7,6 +7,3 @@ target
 /.project
 /.settings
 /RUNNING_PID
-
-/app/models/Paginator.scala
-/app/untitled.sc
