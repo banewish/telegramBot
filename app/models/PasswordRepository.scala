@@ -27,7 +27,7 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
   def create(password_hash: String): Future[Int] = db.run {
 
     val queryForCreate =
-    passwords.map(p => (p.password_hash)) += passwordHash(passwords.toString)
+    passwords.map(p => (p.password_hash)) += passwordHash(passwords.toString) // already with hash, method of hash below
 
     queryForCreate
   }
@@ -41,7 +41,7 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
       .delete
   }
 
-
+// method hash password
   def passwordHash(s: String): String = {
     import java.security.MessageDigest
     import java.math.BigInteger
