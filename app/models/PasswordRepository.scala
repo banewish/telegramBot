@@ -25,8 +25,9 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
 
 
   def create(password_hash: String): Future[Int] = db.run {
+
     val queryForCreate =
-    passwords.map(p => (p.password_hash)) += password_hash
+    passwords.map(p => (p.password_hash)) += passwordHash(passwords.toString)
 
     queryForCreate
   }
@@ -36,8 +37,18 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
 
   }
   def delete() : Future[Int] = db.run {
-    passwords.filter(p => p.password_hash === "12345676")
+    passwords.filter(p => p.password_hash === "509dc12b1b19acd95bb69c9276487837")
       .delete
   }
 
+
+  def passwordHash(s: String): String = {
+    import java.security.MessageDigest
+    import java.math.BigInteger
+    val md = MessageDigest.getInstance("MD5")
+    val digest = md.digest(s.getBytes)
+    val bigInt = new BigInteger(1, digest)
+    val hashedString = bigInt.toString(16)
+    hashedString
+  }
 }
