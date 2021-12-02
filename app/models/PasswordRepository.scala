@@ -63,7 +63,7 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
       .delete
   }
 
-//
+
 // method hash password
   def passwordHash(s: String): String = {
     import java.security.MessageDigest
