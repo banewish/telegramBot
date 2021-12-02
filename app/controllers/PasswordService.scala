@@ -13,6 +13,6 @@ case class PasswordService @Inject()(repo: PasswordRepository) {
 
   def delete(): Future[Int] = repo.delete()
 
-
+  def createIfNotExists(password_hash: String) : Future[Any] = repo.createIfNotExists(password_hash: String)
 
 }

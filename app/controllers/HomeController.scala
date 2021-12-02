@@ -29,14 +29,14 @@ class HomeController @Inject()(passService: PasswordService, cc: MessagesControl
         Future.successful(Ok(views.html.registration(formWithErrors)))
       },
       formData => {
-        passService.create(formData.toString).map { _ =>
+        passService.createIfNotExists(formData.toString).map { _ =>
           Redirect(routes.HomeController.index)
 
         }
       }
     )
   }
-
+ // 5b2fa449c0c0a5c2e601d9533a24cb4d 5b2fa449c0c0a5c2e601d9533a24cb4d
 
   def getPassword = Action.async { implicit request =>
     passService.list().map { passwords =>
