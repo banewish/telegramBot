@@ -1,20 +1,16 @@
-package models
+package repositories
 
-import controllers.UserDataForm.UserData
-
-import javax.inject._
+import models.PasswordHash
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
-import slick.jdbc.SetParameter.SetBigDecimal.tupled
-import slick.jdbc.SetParameter._
 
+import javax.inject._
 import scala.concurrent.{ExecutionContext, Future}
 
 
 class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
 
   private val dbConfig = dbConfigProvider.get[JdbcProfile]
-  import controllers.HomeController
   import dbConfig._
   import profile.api._
 
@@ -37,6 +33,12 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
   }
 
 
+
+//  def createIfNotExists(password_hash : String) : Future[Any] = db.run {
+//    passwords.filter(p => p.password_hash === PasswordHash(passwords.toString)).result
+//
+//
+//    }
 
   def createIfNotExists(password_hash : String) : Future[Any] = db.run {
     val queryForCreateIfNotExists =
@@ -66,8 +68,8 @@ class PasswordRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(imp
 
 // method hash password
   def passwordHash(s: String): String = {
-    import java.security.MessageDigest
     import java.math.BigInteger
+    import java.security.MessageDigest
     val md = MessageDigest.getInstance("MD5")
     val digest = md.digest(s.getBytes)
     val bigInt = new BigInteger(1, digest)

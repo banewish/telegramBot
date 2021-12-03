@@ -1,7 +1,8 @@
-package controllers
+package services
 
 import com.google.inject.Inject
-import models.{PasswordHash, PasswordRepository}
+import models.PasswordHash
+import repositories.PasswordRepository
 
 import scala.concurrent.Future
 

@@ -1,18 +1,20 @@
 package controllers
 
-import models.{PasswordHash, PasswordRepository}
 
-import java.lang.ProcessBuilder.Redirect
+
+
 import javax.inject._
 import play.api.mvc._
 import play.api._
 import play.api.libs.json.Json
+import services.PasswordService
+
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 
 class HomeController @Inject()(passService: PasswordService, cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
 
-  import UserDataForm._
+  import forms.UserDataForm._
 
 
   def index() = Action { implicit request: Request[AnyContent] =>
@@ -36,7 +38,7 @@ class HomeController @Inject()(passService: PasswordService, cc: MessagesControl
       }
     )
   }
- // 5b2fa449c0c0a5c2e601d9533a24cb4d 5b2fa449c0c0a5c2e601d9533a24cb4d
+ //
 
   def getPassword = Action.async { implicit request =>
     passService.list().map { passwords =>
