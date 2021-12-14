@@ -7,12 +7,12 @@ import javax.inject._
 import play.api.mvc._
 import play.api._
 import play.api.libs.json.Json
-import services.PasswordService
+import services.{BotService, PasswordService}
 
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 
-class HomeController @Inject()(passService: PasswordService, cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
+class HomeController @Inject()(botService: BotService, passService: PasswordService, cc: MessagesControllerComponents) extends MessagesAbstractController(cc) {
 
   import forms.UserDataForm._
 
@@ -51,7 +51,7 @@ class HomeController @Inject()(passService: PasswordService, cc: MessagesControl
       Ok(Json.toJson(passwords.toString()))
     }
   }
-
+ botService.init
 }
 
 // получить, хешировать, отправить на сервис и проверить наличие в базе
