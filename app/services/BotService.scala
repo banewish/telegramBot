@@ -1,7 +1,7 @@
 package services
 import javax.inject.{Inject, Singleton}
 
-import bot.RandomBot
+import bot.HashBot
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 
@@ -16,5 +16,7 @@ class BotService {
   def init(): Future[Unit] = bot.run()
 //  bot.shutdown() // initiate shutdown
   // Wait for the bot end-of-life
+
+
 
 }

@@ -51,7 +51,8 @@ class HomeController @Inject()(botService: BotService, passService: PasswordServ
       Ok(Json.toJson(passwords.toString()))
     }
   }
- botService.init
+
+ botService.init()
 }
 
 // получить, хешировать, отправить на сервис и проверить наличие в базе
