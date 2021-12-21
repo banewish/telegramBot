@@ -1,7 +1,7 @@
 package services
 import javax.inject.{Inject, Singleton}
-
 import bot.HashBot
+
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.Duration
 
