@@ -34,7 +34,7 @@ class ChatBotClass(val token: String) extends TelegramBot
       }
 
 
-  val resultForUser = ("Мы отправили ваше сообщение.")
+  val resultForUser = ("Мы отправили ваше сообщение")
 
 
 
