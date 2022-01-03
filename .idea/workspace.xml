@@ -208,7 +208,10 @@
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/target/streams/test/unmanagedClasspath/_global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.bsp/sbt.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.idea/codeStyles/Project.xml" beforeDir="false" />
@@ -332,12 +335,29 @@
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/main/scala/apple/Apple.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/test/scala/FirstSpec.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/test/scala/SecondSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/default.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/test/controllers/$model__Camel$ControllerSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/HomeController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/HomeController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordRepository.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/registration.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/registration.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordHash.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/index.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/main.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/registration.scala.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/messages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/project/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/test/controllers/HomeControllerSpec.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/default.properties" beforeDir="false" />
@@ -2106,7 +2126,13 @@
     </projectState>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -2129,7 +2155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../examples" />
     <property name="settings.editor.selected.configurable" value="inlay.hints.Scala" />
   </component>
   <component name="RunManager" selected="Application.BotObject">
