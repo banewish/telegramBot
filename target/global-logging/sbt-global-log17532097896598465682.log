@@ -1,0 +1,103 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\1\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (AdoptOpenJDK Java 11.0.9.1)
+[debug]       Load.loadUnit: plugins took 153.3328ms
+[debug]       Load.loadUnit: defsScala took 0.5069ms
+[debug] [Loading] Scanning directory C:\Users\1\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 38.4891 ms
+[debug]           Load.resolveProject(global-plugins) took 80.1052ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\1\.sbt\1.0\plugins, plugins: List(<none>))) took 165.6151ms
+[debug] [Loading] Done in C:\Users\1\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 217.6606ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.4719ms
+[debug]     Load.loadUnit(file:/C:/Users/1/.sbt/1.0/plugins/, ...) took 390.8332ms
+[debug]   Load.apply: load took 727.1018ms
+[debug]   Load.apply: resolveProjects took 14.1772ms
+[debug]   Load.apply: finalTransforms took 123.6894ms
+[debug]   Load.apply: config.delegates took 19.352ms
+[debug]   Load.apply: Def.make(settings)... took 1692.9921ms
+[debug]   Load.apply: structureIndex took 363.7792ms
+[debug]   Load.apply: mkStreams took 3.2635ms
+[info] loading global plugins from C:\Users\1\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 6446.6751ms
+[debug]           Load.loadUnit: plugins took 67.7624ms
+[debug]           Load.loadUnit: defsScala took 0.0081ms
+[debug] [Loading] Scanning directory C:\projects\ChatBot\project
+[debug]             Load.loadUnit: mkEval took 11.1487ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\projects\ChatBot\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 4.1996 ms
+[info] loading settings for project chatbot-build from idea.sbt ...
+[debug]               Load.resolveProject(chatbot-build) took 22.5739ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id chatbot-build, base: C:\projects\ChatBot\project, plugins: List(<none>))) took 28.1291ms
+[debug] [Loading] Done in C:\projects\ChatBot\project, returning: (chatbot-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 6656.5124ms
+[debug]           Load.loadUnit: cleanEvalClasses took 10.2198ms
+[debug]         Load.loadUnit(file:/C:/projects/ChatBot/project/, ...) took 6736.0186ms
+[debug]       Load.apply: load took 6739.7059ms
+[debug]       Load.apply: resolveProjects took 0.1777ms
+[debug]       Load.apply: finalTransforms took 33.3562ms
+[debug]       Load.apply: config.delegates took 0.8445ms
+[debug]       Load.apply: Def.make(settings)... took 280.5078ms
+[debug]       Load.apply: structureIndex took 59.6356ms
+[debug]       Load.apply: mkStreams took 0.0046ms
+[info] loading project definition from C:\projects\ChatBot\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 9962.4941ms
+[debug]     Load.loadUnit: defsScala took 0.0123ms
+[debug] [Loading] Scanning directory C:\projects\ChatBot
+[debug]       Load.loadUnit: mkEval took 0.7187ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\projects\ChatBot, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))), Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 3.9855 ms
+[info] loading settings for project chatbot from build.sbt ...
+[debug]         Load.resolveProject(chatbot) took 46.6418ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id chatbot, base: C:\projects\ChatBot, plugins: List(<none>))) took 53.1903ms
+[debug] [Loading] Done in C:\projects\ChatBot, returning: (chatbot)
+[debug]     Load.loadUnit: loadedProjectsRaw took 4127.572ms
+[debug]     Load.loadUnit: cleanEvalClasses took 23.5512ms
+[debug]   Load.loadUnit(file:/C:/projects/ChatBot/, ...) took 14114.6887ms
+[debug] Load.apply: load took 14120.7182ms
+[debug] Load.apply: resolveProjects took 0.1838ms
+[debug] Load.apply: finalTransforms took 55.6583ms
+[debug] Load.apply: config.delegates took 1.8011ms
+[debug] Load.apply: Def.make(settings)... took 170.7678ms
+[debug] Load.apply: structureIndex took 84.3674ms
+[debug] Load.apply: mkStreams took 0.0035ms
+[info] set current project to ChatBot (in build file:/C:/projects/ChatBot/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 54125 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 54125, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to ChatBot (in build file:/C:/projects/ChatBot/)
+[debug] > Exec(idea-shell, None, None)

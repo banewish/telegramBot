@@ -1,0 +1,19 @@
+[debug] Packaging C:\projects\ChatBot\target\scala-2.13\chatbot_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	bot
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot
+[debug] 	bot\ChatBotClass$Int$.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\ChatBotClass$Int$.class
+[debug] 	bot\ChatBotClass.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\ChatBotClass.class
+[debug] 	bot\Main$.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\Main$.class
+[debug] 	bot\Main$delayedInit$body.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\Main$delayedInit$body.class
+[debug] 	bot\Main.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\Main.class
+[debug] 	bot\services
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\services
+[debug] 	bot\services\BotService.class
+[debug] 	  C:\projects\ChatBot\target\scala-2.13\classes\bot\services\BotService.class
+[debug] Done packaging.
