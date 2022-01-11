@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c55849-e601-493e-9dc3-0c15bd86f9ba" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/../examples/app/repositories/PasswordRepository.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/.bsp/sbt.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/.idea/codeStyles/Project.xml" beforeDir="false" />
@@ -208,10 +209,9 @@
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/target/streams/test/unmanagedClasspath/_global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AkkaExamples/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ee8f3daea3e7468cf654.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/bot/BotObject.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/bot/BotObject.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/bot/services/BotService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/bot/services/BotService.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.bsp/sbt.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DVD/.idea/codeStyles/Project.xml" beforeDir="false" />
@@ -335,29 +335,20 @@
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/main/scala/apple/Apple.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/test/scala/FirstSpec.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../JsonExamples/src/test/scala/SecondSpec.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/default.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.g8/form/test/controllers/$model__Camel$ControllerSpec.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/HomeController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/HomeController.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordHash.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/controllers/UserDataForm.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordHash.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordHash.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/models/PasswordRepository.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/index.scala.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/main.scala.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/registration.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/index.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/index.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/main.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/app/views/main.scala.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/application.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/messages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/messages" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/conf/messages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/project/build.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/project/plugins.sbt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/javascripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/public/stylesheets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/test/controllers/HomeControllerSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/project/plugins.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/project/plugins.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayAndScalaProject/test/controllers/HomeControllerSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayAndScalaProject/test/controllers/HomeControllerSpec.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/app/controllers/$model__Camel$Controller.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/app/views/$model__camel$/form.scala.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/.g8/form/default.properties" beforeDir="false" />
@@ -365,7 +356,6 @@
       <change beforePath="$PROJECT_DIR$/../PlayLearning/LICENSE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/NOTICE" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PlayLearning/app/controllers/HomeController.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/app/views/commonSidebar.scala.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/app/views/explore.scala.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlayLearning/app/views/index.scala.html" beforeDir="false" />
@@ -1196,9 +1186,10 @@
       <change beforePath="$PROJECT_DIR$/../WebApiReload/target/streams/test/unmanagedClasspath/_global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WebApiReload/target/streams/test/unmanagedJars/_global/streams/export" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../examples/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/app/controllers/HomeController.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/app/controllers/HomeController.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../examples/app/form/Form.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../examples/app/views/index1.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/app/views/index1.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/app/views/index1.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../examples/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/conf/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../examples/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../examples/conf/routes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../humanStatus/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../pararmama/.bsp/sbt.json" beforeDir="false" />
@@ -2112,6 +2103,47 @@
       <change beforePath="$PROJECT_DIR$/../target/streams/runtime/unmanagedClasspath/_global/streams/out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" />
     </list>
+    <list id="73872b17-e596-4109-81f1-858bfe66558f" name="bot fix" comment="">
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1e0cf6055ecc0485ab41$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1e0cf6055ecc0485ab41.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$1e0cf6055ecc0485ab41.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ad6aa67b3166b49f023$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ad6aa67b3166b49f023.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$4ad6aa67b3166b49f023.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7aa89467fada201f35be$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7aa89467fada201f35be.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$7aa89467fada201f35be.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$873672e77332f719c3da$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$873672e77332f719c3da.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$873672e77332f719c3da.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a4c4e134631fb4abc0aa$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a4c4e134631fb4abc0aa.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$a4c4e134631fb4abc0aa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac48df335d2266d14661$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac48df335d2266d14661.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$ac48df335d2266d14661.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f54127b42dc346fb8bf8$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f54127b42dc346fb8bf8.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/config-classes/$f54127b42dc346fb8bf8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -2142,6 +2174,22 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/scala/bot/ChatBotClass.scala">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="73872b17-e596-4109-81f1-858bfe66558f" />
+        <range start1="6" end1="7" start2="7" end2="12" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="11" end1="12" start2="16" end2="16" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="15" end1="19" start2="19" end2="23" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="20" end1="21" start2="24" end2="24" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="25" end1="25" start2="28" end2="30" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="26" end1="26" start2="31" end2="34" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="27" end1="40" start2="35" end2="41" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="41" end1="45" start2="42" end2="46" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+        <range start1="46" end1="47" start2="47" end2="47" changelist="64c55849-e601-493e-9dc3-0c15bd86f9ba" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -2155,8 +2203,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../examples" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.Scala" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bot_fix.patch" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Scala" />
   </component>
   <component name="RunManager" selected="Application.BotObject">
     <configuration name="BotObject" type="Application" factoryName="Application" temporary="true">

@@ -3,7 +3,7 @@ import services.BotService
 
 object BotObject extends App {
 
- val botServ = new BotService
+  val botServ = new BotService
   botServ.init()
 
 }
